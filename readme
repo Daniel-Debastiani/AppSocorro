@@ -1,0 +1,27 @@
+# Instalando Dependências
+
+    ## Linux
+
+        sudo apt update
+        sudo apt install python3-pip
+        pip3 install virtualenv
+
+        cd /path/to/your/project
+        virtualenv venv
+
+        source venv/bin/activate
+        pip3 install -r requirements.txt
+
+    ## Windows
+        
+        pip install virtualenv
+
+        cd \path\to\your\project
+        virtualenv venv
+
+        venv\Scripts\activate
+        pip install -r requirements.txt
+
+# Rodar Aplicação
+
+    uvicorn app.main:app --reload
