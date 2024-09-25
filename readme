@@ -4,9 +4,11 @@
 
         sudo apt update
         sudo apt install python3-pip
-        pip3 install virtualenv
 
-        cd /path/to/your/project
+        pip3 install virtualenv
+        sudo apt install python3-virtualenv -> versões mais recentes do linux
+
+        cd /path/to/your/project   (MODIFIQUE)
         virtualenv venv
 
         source venv/bin/activate
@@ -16,11 +18,18 @@
         
         pip install virtualenv
 
-        cd \path\to\your\project
+        cd \caminho\do\seu\projeto
         virtualenv venv
 
         venv\Scripts\activate
         pip install -r requirements.txt
+
+# Criação de Container Postgres12 Docker
+    docker run --name meu-postgres12 -e POSTGRES_USER=meu_usuario -e POSTGRES_PASSWORD=minha_senha -e POSTGRES_DB=minha_base_de_dados -p 5432:5432 -d postgres:12
+    faça as mudanças no codigo do arquivo app/models.py
+
+
+    docker run --name postgres12 -e POSTGRES_USER=postgres12 -e POSTGRES_PASSWORD=Postgres12Postgres131415 -e POSTGRES_DB=app_socorro_database -p 5432:5432 -d postgres:12
 
 # Rodar Aplicação
 

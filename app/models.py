@@ -6,7 +6,9 @@ from .schemas.emergencia_schema import TipoEmergencia
 from datetime import datetime
 
 
-DATABASE_URL = 'postgresql://admin:TruckCenter201821311351420518@localhost/bncSocorro'
+# Modifique
+# DATABASE_URL = 'postgresql://admin:TruckCenter201821311351420518@localhost/bncSocorro'
+DATABASE_URL = 'postgresql://postgres12:Postgres12Postgres131415@localhost/app_socorro_database'
 
 engine = create_engine(DATABASE_URL)
 Base = declarative_base()
